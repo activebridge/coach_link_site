@@ -1,0 +1,11 @@
+<section class="hero" id="top"><div class="hero-bg" aria-hidden="true"></div>
+<div class="wrap hero-grid"><div class="hero-copy">
+<span class="eyebrow h-in" style="--d:.05s"><i></i>{{ t.spots | escape }}</span>
+<h1 class="split">{% assign ws = t.h1 | split: " " %}{% for w in ws %}<span class="w"><span style="--i:{{ forloop.index0 }}">{{ w | escape }}</span></span>{% unless forloop.last %}{{ ' ' }}{% endunless %}{% endfor %}</h1>
+<p class="sub h-in" style="--d:.55s">{{ t.sub | escape }}</p>
+<div class="cta h-in" style="--d:.7s"><a class="btn lg" href="#apply" data-track="cta-hero" data-magnetic>{{ t.cta | escape }}</a><a class="btn ghost lg" href="#story">{{ t.nav[0].label | escape }}</a></div>
+</div>
+<div class="stage h-in" style="--d:.35s" aria-hidden="true" data-parallax>
+<div class="phone" data-depth="14"><div class="ph-top"><b>Coach Link</b><span class="lc-live"><i></i>{{ t.live_lbl }}</span></div>
+{% include live-card.html name="Anna" hr=162 phase="0.3" amp=16 cls="" %}{% include live-card.html name="Marcus" hr=138 phase="1.9" amp=14 cls="" %}{% include live-card.html name="Dana" hr=104 phase="3.4" amp=12 cls="" %}</div>
+{% include watch.html hr=162 cls="hero-watch" %}</div></div></section>

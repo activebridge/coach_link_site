@@ -1,0 +1,5 @@
+{%- assign t = site.data[page.lang] -%}
+{%- if page.home -%}{%- assign h = "" -%}{%- else -%}{%- assign h = t.home | relative_url -%}{%- endif -%}
+<header class="bar" id="bar"><div class="wrap bar-in"><a class="brand" href="{{ t.home | relative_url }}"><img src="{{ '/assets/logo.svg' | relative_url }}" alt="" width="28" height="28"><span>Coach Link</span></a>
+<nav class="nav" aria-label="Main">{% for n in t.nav %}<a class="nl" href="{{ h }}#{{ n.id }}" data-nav="{{ n.id }}">{{ n.label | escape }}</a>{% endfor %}</nav>
+<div class="bar-r"><a class="lang" href="{{ t.other_home | relative_url }}" hreflang="{% if t.lang == 'en' %}uk{% else %}en{% endif %}">{{ t.other_label }}</a><a class="btn sm" href="{{ h }}#apply" data-magnetic>{{ t.nav_cta | escape }}</a></div></div></header>

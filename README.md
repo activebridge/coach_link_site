@@ -1,17 +1,30 @@
 # Coach Link — landing site
 
-Static landing page (EN + UA) for Coach Link. Structure follows the "Coach Link — структура лендінгу" doc. Design tokens/fonts come from the main `coach_link` app.
+Jekyll site (EN + UA) for Coach Link, deployed to GitHub Pages at `https://activebridge.org/coach_link_site/`. Structure follows the "Coach Link — структура лендінгу" doc; design tokens and fonts come from the main `coach_link` app.
+
+## Run
 
 ```bash
-python3 build.py              # regenerates index.html, privacy.html, uk/*
-python3 -m http.server 8000   # http://localhost:8000  (UA: /uk/)
-FORM_ENDPOINT=https://... python3 build.py   # wire the forms to a backend
+bundle install              # once (github-pages gem = the engine Pages uses)
+bundle exec jekyll serve    # http://localhost:4000/coach_link_site/   (UA: /uk/)
 ```
 
-Edit copy in `build.py` (dictionary `T`), styles in `assets/style.css`. Without `FORM_ENDPOINT` the forms run in demo mode (nothing is sent).
+Without Bundler: `JEKYLL_NO_BUNDLER_REQUIRE=1 jekyll serve`.
 
-TODO before publishing: real `EVENT_DATE`, `INSTAGRAM`, `EMAIL`; hero video + feature screenshots; form backend; privacy policy review; analytics.
+## Where things are
+
+- `_config.yml` — `baseurl`, email, Instagram, `form_endpoint` (empty = demo mode, nothing is sent), `event_date`. Set `baseurl: ""` when serving from a domain root.
+- `_data/en.yml`, `_data/uk.yml` — all copy. Edit text here, keep both files in sync.
+- `_layouts/default.html`, `_includes/` — page shell and sections (`sections/*`, feature card art in `art/*`, live card / watch mockups).
+- `index.html`, `uk/index.html`, `privacy.html`, `uk/privacy.html` — thin pages that pick the language via `lang:` front matter.
+- `assets/` — `style.css`, `app.js`, fonts, `vendor/` (Lenis, GSAP, ScrollTrigger, no CDN).
+
+All URLs go through `relative_url`, so the site works under any `baseurl`.
 
 ## Motion
 
-Smooth scroll uses Lenis, scroll-driven animation uses GSAP + ScrollTrigger, vendored in `assets/vendor/` (no CDN, no build step). Everything is decorative and degrades: with `prefers-reduced-motion` or without JS the page is static. The hero phone/watch and the pinned story are HTML/CSS mockups with simulated heart-rate data, not screenshots.
+Smooth scroll uses Lenis, scroll-driven animation uses GSAP + ScrollTrigger. Everything is decorative and degrades: with `prefers-reduced-motion` or without JS the page is static. The hero phone/watch and the pinned story are HTML/CSS mockups with simulated heart-rate data, not screenshots.
+
+## TODO before launch
+
+Real `event_date`, `instagram`, `email`; form backend; privacy policy review; analytics; hero video and screenshots (local files live in `assets/media/`, git-ignored for now).

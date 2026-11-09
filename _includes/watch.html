@@ -1,0 +1,4 @@
+{%- include zone.html hr=include.hr -%}
+{%- assign pct = include.hr | times: 100.0 | divided_by: 190.0 -%}
+{%- assign off = 100.0 | minus: pct | round: 1 -%}
+<div class="watch {{ include.cls }}" data-live data-base="{{ include.hr }}" data-amp="12" data-phase="1.7" style="--zc:var(--z{{ zone }})"><svg class="w-ring" viewBox="0 0 120 120"><circle class="w-track" cx="60" cy="60" r="52"/><circle class="w-val" cx="60" cy="60" r="52" pathLength="100" stroke-dasharray="100" stroke-dashoffset="{{ off }}"/></svg><div class="w-in"><b class="lc-hr">{{ include.hr }}</b><span class="w-bpm">bpm</span><span class="w-zone lc-zone">Z{{ zone }}</span></div></div>

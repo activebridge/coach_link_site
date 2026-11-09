@@ -1,3 +1,7 @@
 .DS_Store
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
 # raw video exports stay local until media is back on the page
 assets/media/

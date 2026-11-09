@@ -1,0 +1,19 @@
+{%- assign f = t.f -%}
+<section class="final" id="apply"><div class="final-glow" aria-hidden="true"></div><div class="wrap">
+<div class="final-head" data-reveal><h2>{{ t.final_h | escape }}</h2><p>{{ t.final_p | escape }}</p></div>
+<div class="form-card" data-reveal>
+<form id="beta-form" data-endpoint="{{ site.form_endpoint | escape }}" novalidate>
+<input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="row2"><div class="field"><label for="f-name">{{ f.name | escape }}</label><input id="f-name" type="text" name="name" required autocomplete="name"></div>
+<div class="field"><label for="f-email">{{ f.email | escape }}</label><input id="f-email" type="email" name="email" required autocomplete="email"></div></div>
+<div class="row2"><div class="field"><label for="f-social">{{ f.social | escape }}</label><input id="f-social" type="text" name="social" required></div>
+<div class="field"><label for="f-loc">{{ f.country | escape }}</label><input id="f-loc" type="text" name="location" required autocomplete="address-level2"></div></div>
+<fieldset class="field"><legend>{{ f.how | escape }}</legend><div class="opts">{% for o in t.how_opts %}<label class="opt"><input type="checkbox" name="how" value="{{ o | escape }}"><span>{{ o | escape }}</span></label>{% endfor %}</div></fieldset>
+<div class="field"><label for="f-clients">{{ f.clients | escape }}</label><div class="select"><select id="f-clients" name="clients" required><option value="">—</option><option>1–5</option><option>6–15</option><option>16–30</option><option>30+</option></select></div></div>
+<fieldset class="field"><legend>{{ f.watch | escape }}</legend><div class="opts">{% for o in t.watch_opts %}<label class="opt"><input type="checkbox" name="watches" value="{{ o | escape }}"><span>{{ o | escape }}</span></label>{% endfor %}</div></fieldset>
+<label class="consent"><input type="checkbox" name="consent" required><span class="box"></span><span>{{ f.consent | escape }}</span></label>
+<button class="btn lg" type="submit" data-track="submit" data-magnetic>{{ f.send | escape }}</button></form>
+<div class="ok" id="thanks" role="status"><h3>{{ t.thanks_h | escape }}</h3><p>{{ t.thanks_p | escape }}</p><p>{{ t.ref | escape }}</p><button class="btn ghost" id="copy" type="button" data-done="{{ t.copied | escape }}">{{ t.copy | escape }}</button></div></div>
+<div class="event" id="event" data-reveal><div><h3>{{ t.ev_h | escape }}</h3><p>{{ t.ev_p | escape }} <strong>{{ t.ev_date | escape }}{{ site.event_date }}</strong></p></div>
+<form id="event-form" data-endpoint="{{ site.form_endpoint | escape }}"><input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true"><input type="email" name="email" required placeholder="{{ t.ev_ph | escape }}" aria-label="{{ t.ev_ph | escape }}" autocomplete="email"><button class="btn" type="submit">{{ t.ev_btn | escape }}</button></form></div>
+</div></section>

@@ -1,0 +1,16 @@
+{%- assign classes = "c-live,c-ready,c-report,c-poke,c-body,c-call,c-tips,c-notes,c-soon" | split: "," -%}
+<section class="features" id="features"><div class="wrap"><div class="sec-head" data-reveal><h2>{{ t.bento_h | escape }}</h2><p>{{ t.bento_p | escape }}</p></div><div class="bento">
+{% for f in t.feats %}<article class="bento-card {{ classes[forloop.index0] }}" data-reveal data-spot><div class="bc-art" aria-hidden="true">
+{%- case forloop.index0 -%}
+{%- when 0 -%}{% include art/live.html %}
+{%- when 1 -%}{% include art/meters.html %}
+{%- when 2 -%}{% include art/spark.html %}
+{%- when 3 -%}{% include art/poke.html %}
+{%- when 4 -%}{% include art/chips.html %}
+{%- when 5 -%}{% include art/call.html %}
+{%- when 6 -%}{% include art/tips.html %}
+{%- when 7 -%}{% include art/bars.html %}
+{%- when 8 -%}{% include art/sets.html %}
+{%- endcase -%}
+</div><div class="bc-txt"><span class="when">{{ f.when | escape }}</span>{% if f.soon %}<span class="tag">{{ t.soon | escape }}</span>{% endif %}<h3>{{ f.title | escape }}</h3><p>{{ f.text | escape }}</p></div></article>
+{% endfor %}</div></div></section>

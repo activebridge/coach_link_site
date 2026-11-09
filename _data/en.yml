@@ -1,0 +1,222 @@
+---
+lang: en
+other_label: UA
+title: Coach Link — see how your client feels, live
+desc: Coach Link turns your client's Garmin watch into a live coaching dashboard on your phone. Free for clients. The beta starts December 1 — apply now.
+nav_event: Launch event
+nav_cta: Apply for the beta
+h1: See how your client feels — live, from the watch they already wear.
+sub: Coach Link turns your client's Garmin watch into a live coaching dashboard on your phone. Apple Watch and Amazfit are next. Free for clients.
+cta: Apply for the beta
+spots: Beta starts Dec 1 · 100 spots · 1 year free for beta coaches
+pains_h: Sound familiar?
+pains:
+- Is she pushing hard or just coasting?
+- He slept 4 hours — and you find out on set three.
+- Counting reps in your head while watching their form.
+how_h: How it works
+steps:
+- Your client installs the free Coach Link app on their watch.
+- You scan the QR code on their watch.
+- Their heart rate, zones and stats appear on your phone — live.
+how_note: No chest straps. No extra hardware. Works with many clients at once.
+feat_h: Before, during and after the session
+soon: Coming soon
+feats:
+- when: During
+  title: Live client view
+  text: Heart rate, zones and effort for every client in real time. Get an alert when someone goes too hard — or not hard enough.
+  soon: false
+- when: Before
+  title: Readiness check
+  text: See sleep, stress and recovery before the session starts. Know when to push and when to go easy.
+  soon: false
+- when: After
+  title: Session report & progress
+  text: 'Every workout is saved. Clients get a shareable summary; you get proof of progress: resting heart rate, recovery, consistency.'
+  soon: false
+- when: During
+  title: Poke
+  text: Tap once and the client's watch vibrates and glows. Get their attention without a word.
+  soon: false
+- when: During
+  title: The whole body picture
+  text: Heart rate in zone colours plus stress, breathing, Body Battery, heart rate variability and blood oxygen where the watch has them.
+  soon: false
+- when: During
+  title: In the gym or on camera
+  text: 'Stand next to your client or coach over a video call. The card is the same: you see the body, they hear your cue.'
+  soon: false
+- when: After
+  title: Advice from the data
+  text: 'Short pointers worked out from recent workouts: when to rest, how much load, how recovery is going.'
+  soon: false
+- when: After
+  title: Notes & trends
+  text: Keep notes on every client and workout, and see trends by week, month and year.
+  soon: false
+- when: During
+  title: Sets & reps tracking
+  text: The watch counts sets and reps automatically. No more notebooks between sets.
+  soon: true
+trust_h: Your clients will say yes
+trust:
+- Free for your clients. Always.
+- Clients choose what to share and can stop anytime.
+- Works with the watch they already have.
+beta_h: Become a founding coach.
+beta:
+- 1 year of Coach Link PRO free
+- Your own promo code — earn a share of every subscription it brings
+- 'Direct line to the founder: your feedback shapes the product'
+- Only 100 spots
+price_h: Simple pricing, from $5/month
+popular: Most popular
+per: "/ month"
+price_note: Free for clients. Beta coaches get the first year of PRO free.
+watches_h: Works with the watch your client already wears
+devices:
+- name: Garmin
+  'on': true
+- name: Apple Watch
+  'on': false
+- name: Amazfit
+  'on': false
+- name: Wear OS
+  'on': false
+live: In the beta
+faq_h: FAQ
+faq:
+- q: Which watches are supported?
+  a: Garmin works in the beta. Apple Watch and Amazfit are next, Wear OS after that.
+- q: Does my client need to pay?
+  a: No. The app is free for clients, always.
+- q: Does it drain the battery?
+  a: Coach Link only sends data during a session you have started together, so a normal workout is not affected noticeably. We will publish real numbers from the beta.
+- q: How many clients can I track at once?
+  a: Up to 5 on PRO, unlimited on PRO MAX.
+- q: Is client data private?
+  a: Clients choose what to share and can stop anytime. See our privacy policy.
+- q: When does the beta start?
+  a: The beta starts on December 1. We review applications and reply within 7 days, so apply now to get a founding-coach spot.
+apply_h: Apply for the beta
+apply_p: Takes less than a minute. We review applications by hand and reply within 7 days.
+f:
+  name: Name
+  email: Email
+  social: Instagram / TikTok
+  country: Country, city
+  how: How do you coach?
+  clients: Active clients
+  watch: Your clients' watches
+  consent: I agree to the processing of my data as described in the privacy policy.
+  send: Send application
+how_opts:
+- 1:1 in gym
+- Group classes
+- Running
+- Online
+watch_opts:
+- Garmin
+- Apple Watch
+- Amazfit
+- Wear OS
+- Other
+- Don't know
+thanks_h: You're on the list.
+thanks_p: We'll review applications and reply within 7 days.
+cal: Add the launch event to your calendar
+ref: Invite another coach — applications with referrals are reviewed first.
+copy: Copy your invite link
+copied: Copied!
+ev_h: Join the launch event
+ev_p: Not in the beta? Come to the online launch.
+ev_date: 'Date: '
+ev_btn: Join the launch event
+ev_ph: Your email
+privacy: Privacy policy
+rights: "© Coach Link"
+priv_h: Privacy policy
+priv:
+- h: What we collect
+  p: 'The details you enter in the beta application or launch-event form: name, email, social handle, location, coaching type, number of clients and watch types. We also record which channel you came from (UTM tags) and a referral code if you used one.'
+- h: Why
+  p: To review beta applications, contact you about the beta and the launch event, and decide which watches to support first.
+- h: Who sees it
+  p: Only the Coach Link team and the services we use to store the data and send email. We do not sell your data.
+- h: Your rights
+  p: Write to [email] to see, correct or delete your data, or to withdraw consent at any time.
+- h: Health data
+  p: This site does not collect health data. The Coach Link app only shares what a client chooses to share with their coach.
+back: Back to the site
+nav:
+- id: story
+  label: How it works
+- id: features
+  label: Features
+- id: pricing
+  label: Pricing
+- id: faq
+  label: FAQ
+stats:
+- "n": 100
+  u: ''
+  l: founding spots
+- "n": 7
+  u: " days"
+  l: to get a reply
+- "n": 12
+  u: " months"
+  l: of PRO free in the beta
+- "n": 0
+  u: ''
+  l: chest straps needed
+story_h: From the first rep to your phone — in real time
+story:
+- title: Your client trains
+  text: The watch they already wear is on their wrist. Nothing else to put on.
+- title: Data takes off
+  text: Heart rate, zones and stats fly out in real time.
+- title: You see it all
+  text: Everything lands on your phone. You adjust the session on the spot.
+steps_h: Three steps. About a minute.
+bento_h: Everything you need around the session
+bento_p: Before, during and after — in one calm dashboard.
+plan_name: PRO
+plan_price: "$5"
+plan_per: "/ month"
+plan_who: per coach account
+plan_list:
+- Up to 5 clients at the same time
+- All features
+- Free for every client
+plan_more: Need unlimited clients? PRO MAX is $15 / month.
+final_h: See how your client feels — live.
+final_p: Apply for the beta. We review applications by hand and reply within 7 days.
+client_zone: Zone
+live_lbl: Live
+home: "/"
+other_home: "/uk/"
+privacy_path: "/privacy.html"
+art:
+  sleep: Sleep
+  battery: Body Battery
+  stress: Stress
+  breath: Breath
+  poke: Poke
+  tip1: Rest day tomorrow
+  tip2: Load +10% this week
+  tip3: Recovery is on track
+  day:
+  - M
+  - T
+  - W
+  - T
+  - F
+  - S
+  - S
+  live: Live
+  gym: In the gym
+  call: Video call
+  set: Set 3 · 8 reps
+  alert: Push harder

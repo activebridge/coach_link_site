@@ -1,0 +1,3 @@
+<section class="how"><div class="wrap"><h2 data-reveal>{{ t.steps_h | escape }}</h2>
+<ol class="steps"><span class="steps-line" aria-hidden="true"><i></i></span>{% for s in t.steps %}<li class="step" data-reveal><span class="step-n">{{ forloop.index }}</span><p>{{ s | escape }}</p></li>{% endfor %}</ol>
+<p class="how-note" data-reveal>{{ t.how_note | escape }}</p></div></section>

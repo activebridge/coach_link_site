@@ -1,0 +1,18 @@
+title: Coach Link
+url: "https://activebridge.org"
+baseurl: "/coach_link_site"   # set to "" when served from a domain root
+markdown: kramdown
+
+# Site-wide values used by templates
+email: hello@coachlink.app          # TODO real address
+instagram: https://instagram.com/coachlink   # TODO real handle
+form_endpoint: ""                   # form backend URL; empty = demo mode, nothing is sent
+event_date: TBA                     # launch-event date; the beta itself starts Dec 1
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - assets/media

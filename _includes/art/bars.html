@@ -1,0 +1,2 @@
+{%- assign hs = "35,50,42,64,58,80,92" | split: "," -%}
+<div class="art-bars">{% for d in t.art.day %}<i style="--h:{{ hs[forloop.index0] }}%"><s>{{ d }}</s></i>{% endfor %}</div>

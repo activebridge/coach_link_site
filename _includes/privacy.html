@@ -1,0 +1,4 @@
+{%- assign t = site.data[page.lang] -%}
+<section class="legal-s"><div class="wrap legal"><h1>{{ t.priv_h | escape }}</h1>
+{% for s in t.priv %}<h2>{{ s.h | escape }}</h2><p>{{ s.p | escape | replace: "[email]", site.email }}</p>{% endfor %}
+<p><a href="{{ t.home | relative_url }}">← {{ t.back | escape }}</a></p></div></section>

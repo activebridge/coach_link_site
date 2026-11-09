@@ -1,0 +1,2 @@
+{%- assign zhr = include.hr | plus: 0 -%}
+{%- if zhr >= 171 -%}{%- assign zone = 5 -%}{%- elsif zhr >= 152 -%}{%- assign zone = 4 -%}{%- elsif zhr >= 133 -%}{%- assign zone = 3 -%}{%- elsif zhr >= 114 -%}{%- assign zone = 2 -%}{%- else -%}{%- assign zone = 1 -%}{%- endif -%}
