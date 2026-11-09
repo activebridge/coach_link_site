@@ -1,1 +1,3 @@
 .DS_Store
+# raw video exports stay local until media is back on the page
+assets/media/

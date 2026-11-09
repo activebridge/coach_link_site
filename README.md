@@ -11,3 +11,7 @@ FORM_ENDPOINT=https://... python3 build.py   # wire the forms to a backend
 Edit copy in `build.py` (dictionary `T`), styles in `assets/style.css`. Without `FORM_ENDPOINT` the forms run in demo mode (nothing is sent).
 
 TODO before publishing: real `EVENT_DATE`, `INSTAGRAM`, `EMAIL`; hero video + feature screenshots; form backend; privacy policy review; analytics.
+
+## Motion
+
+Smooth scroll uses Lenis, scroll-driven animation uses GSAP + ScrollTrigger, vendored in `assets/vendor/` (no CDN, no build step). Everything is decorative and degrades: with `prefers-reduced-motion` or without JS the page is static. The hero phone/watch and the pinned story are HTML/CSS mockups with simulated heart-rate data, not screenshots.
