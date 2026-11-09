@@ -15,7 +15,7 @@ T = {
  nav_event="Launch event", nav_cta="Apply for the beta",
  h1="See how your client feels — live, from the watch they already wear.",
  sub="Coach Link turns your client's Garmin, Apple Watch or Amazfit into a live coaching dashboard on your phone. Free for clients.",
- cta="Apply for the beta", demo="Watch the 60-sec demo", spots="Beta spots: 100 · 1 year free for beta coaches",
+ cta="Apply for the beta", demo="Watch the demo", close="Close", spots="Beta spots: 100 · 1 year free for beta coaches",
  pains_h="Sound familiar?", pains=["“Is she pushing hard or just coasting?”","“He slept 4 hours — and you find out on set three.”","“Counting reps in your head while watching their form.”"],
  how_h="How it works", steps=["Your client installs the free Coach Link app on their watch.","You scan the QR code on their watch.","Their heart rate, zones and stats appear on your phone — live."],
  how_note="No chest straps. No extra hardware. Works with many clients at once.",
@@ -44,14 +44,16 @@ T = {
  ev_h="Join the launch event", ev_p="Not in the beta? Come to the online launch.", ev_date="Date: ", ev_btn="Join the launch event", ev_ph="Your email",
  privacy="Privacy policy", rights="© Coach Link",
  priv_h="Privacy policy", priv=[("What we collect","The details you enter in the beta application or launch-event form: name, email, social handle, location, coaching type, number of clients and watch types. We also record which channel you came from (UTM tags) and a referral code if you used one."),("Why","To review beta applications, contact you about the beta and the launch event, and decide which watches to support first."),("Who sees it","Only the Coach Link team and the services we use to store the data and send email. We do not sell your data."),("Your rights","Write to "+EMAIL+" to see, correct or delete your data, or to withdraw consent at any time."),("Health data","This site does not collect health data. The Coach Link app only shares what a client chooses to share with their coach.")],
- back="Back to the site"),
+ back="Back to the site",
+ reel_alt=dict(hero="Live heart rate of a client during training, shown on the coach's phone",zone="Zone alert on the coach's phone",ready="Sleep and readiness before the session",report="Workout history and progress",pair="Scanning the QR code to pair a Garmin watch",pairu="Pairing an Apple Watch Ultra",free="Free watch app for clients",poke_g="Poke on Garmin",poke_a="Poke on Apple Watch Ultra"),
+ poke_h="Poke your client", poke_p="One tap on your phone, and it buzzes on their wrist. Works on Garmin and Apple Watch.", sound="Tap a video for sound"),
 "uk": dict(
  lang="uk", prefix="../", other="../", other_label="EN", title="Coach Link — бачте, як почувається клієнт, наживо",
  desc="Coach Link перетворює Garmin, Apple Watch чи Amazfit вашого клієнта на живу панель тренера на телефоні. Для клієнтів безкоштовно. Подайте заявку на бету.",
  nav_event="Івент запуску", nav_cta="Заявка на бету",
  h1="Бачте, як почувається клієнт — наживо, з годинника, який він уже носить.",
  sub="Coach Link перетворює Garmin, Apple Watch чи Amazfit вашого клієнта на живу панель тренера на телефоні. Для клієнтів безкоштовно.",
- cta="Подати заявку на бету", demo="Дивитись демо за 60 с", spots="Місць у бета-версії: 100 · рік безкоштовно для бета-тренерів",
+ cta="Подати заявку на бету", demo="Дивитись демо", close="Закрити", spots="Місць у бета-версії: 100 · рік безкоштовно для бета-тренерів",
  pains_h="Знайомо?", pains=["«Вона дає максимум чи просто відбуває?»","«Він спав 4 години — а ви дізнаєтесь на третьому підході.»","«Рахуєте повтори в голові й водночас стежите за технікою.»"],
  how_h="Як це працює", steps=["Клієнт встановлює безкоштовний застосунок Coach Link на годинник.","Ви скануєте QR-код на його годиннику.","Пульс, зони й показники з'являються на вашому телефоні — наживо."],
  how_note="Без нагрудних датчиків. Без додаткового заліза. Працює з багатьма клієнтами одночасно.",
@@ -80,10 +82,19 @@ T = {
  ev_h="Приєднуйтесь до івенту запуску", ev_p="Не пройшли в бету? Приходьте на онлайн-запуск.", ev_date="Дата: ", ev_btn="Приєднатись до івенту", ev_ph="Ваш email",
  privacy="Політика конфіденційності", rights="© Coach Link",
  priv_h="Політика конфіденційності", priv=[("Що ми збираємо","Дані, які ви вводите у формі заявки на бету чи реєстрації на івент: ім'я, email, акаунт у соцмережі, місце, тип тренувань, кількість клієнтів і типи годинників. Також фіксуємо канал, з якого ви прийшли (UTM-мітки), і реферальний код, якщо він був."),("Навіщо","Щоб розглядати заявки на бету, зв'язуватись щодо бети й івенту та визначати, які годинники підтримувати першими."),("Хто бачить","Лише команда Coach Link і сервіси, які ми використовуємо для зберігання даних і розсилки. Ми не продаємо ваші дані."),("Ваші права","Напишіть на "+EMAIL+", щоб побачити, виправити чи видалити свої дані або відкликати згоду."),("Дані про здоров'я","Цей сайт не збирає даних про здоров'я. Застосунок Coach Link передає тренеру лише те, чим клієнт вирішив поділитись.")],
- back="Назад на сайт"),
+ back="Назад на сайт",
+ reel_alt=dict(hero="Пульс клієнта під час тренування на телефоні тренера",zone="Сповіщення про зону на телефоні тренера",ready="Сон і готовність до тренування",report="Історія тренувань і прогрес",pair="Сканування QR-коду для підключення Garmin",pairu="Підключення Apple Watch Ultra",free="Безкоштовний застосунок для клієнта",poke_g="Poke на Garmin",poke_a="Poke на Apple Watch Ultra"),
+ poke_h="Підштовхніть клієнта", poke_p="Один дотик на вашому телефоні, і годинник клієнта вібрує. Працює на Garmin та Apple Watch.", sound="Торкніться відео, щоб увімкнути звук"),
 }
 
 def e(s): return html.escape(s, quote=True)
+
+def reel(t, name, alt, eager=False):
+    p = t["prefix"] + "assets/media/reels/"
+    return (f'<div class="reel"><video muted loop playsinline preload="{"auto" if eager else "none"}" poster="{p}posters/{name}.jpg" aria-label="{e(alt)}"'
+            f'{" data-eager" if eager else ""}><source src="{p}{name}.mp4" type="video/mp4"></video></div>')
+
+FEAT_VIDEO = [("03-zone-alert", "zone"), ("07-readiness", "ready"), ("06-workout-history", "report"), None]
 
 def head(t, title, desc, path):
     p = t["prefix"]
@@ -104,7 +115,7 @@ def page(t):
     f = t["f"]
     pains = "".join(f'<div class="box">{e(x)}</div>' for x in t["pains"])
     steps = "".join(f'<div class="box step"><b>{i}</b><p>{e(x)}</p></div>' for i, x in enumerate(t["steps"], 1))
-    feats = "".join(f'<div class="box"><div class="when">{e(w)}</div>{"<span class=tag>"+e(t["soon"])+"</span>" if s else ""}<h3>{e(h)}</h3><p class="muted">{e(b)}</p></div>' for w,h,b,s in t["feats"])
+    feats = "".join(f'<div class="box"><div class="when">{e(w)}</div>{"<span class=tag>"+e(t["soon"])+"</span>" if s else ""}<h3>{e(h)}</h3><p class="muted">{e(b)}</p>{reel(t,v[0],t["reel_alt"][v[1]]) if v else ""}</div>' for (w,h,b,s),v in zip(t["feats"],FEAT_VIDEO))
     trust = "".join(f"<li>{e(x)}</li>" for x in t["trust"])
     beta = "".join(f"<li>{e(x)}</li>" for x in t["beta"])
     plans = "".join(f'<div class="plan{" main" if m else ""}">{"<span class=tag>"+e(t["popular"])+"</span>" if m else ""}<h3>{e(n)}</h3><div class="price">{p} <small>{e(t["per"])}</small></div><p class="muted">{e(d)}</p></div>' for n,p,d,m in t["plans"])
@@ -116,17 +127,16 @@ def page(t):
 <main>
 <section class="hero"><div class="wrap grid"><div>
 <h1>{e(t["h1"])}</h1><p class="sub">{e(t["sub"])}</p>
-<div class="cta"><a class="btn" href="#apply" data-track="cta-hero">{e(t["cta"])}</a><a class="btn ghost" href="#demo" data-track="demo">{e(t["demo"])}</a></div>
+<div class="cta"><a class="btn" href="#apply" data-track="cta-hero">{e(t["cta"])}</a><button class="btn ghost" type="button" id="demo-open" data-track="demo">{e(t["demo"])}</button></div>
 <small>{e(t["spots"])}</small></div>
-<div aria-hidden="true"><div class="card-demo pulse"><div class="name">Anna · 1:1</div><div class="hr">162 <span>bpm</span></div><span class="zone">Zone 4</span></div>
-<div class="mini"><div style="background:var(--z3)"><b>128</b>Zone 3</div><div style="background:var(--z2)"><b>104</b>Zone 2</div></div></div></div></section>
+<div class="hero-reel">{reel(t,"02-live-heart-rate",t["reel_alt"]["hero"],True)}<small>{e(t["sound"])}</small></div></div></section>
 <section class="pain"><div class="wrap"><h2>{e(t["pains_h"])}</h2><div class="cols3">{pains}</div></div></section>
-<section style="padding-top:0"><div class="wrap"><h2>{e(t["how_h"])}</h2><div class="cols3">{steps}</div><p class="muted" style="margin-top:20px"><strong>{e(t["how_note"])}</strong></p></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>{e(t["how_h"])}</h2><div class="cols3">{steps}</div><p class="muted" style="margin-top:20px"><strong>{e(t["how_note"])}</strong></p><div class="reels2">{reel(t,"05-pairing",t["reel_alt"]["pair"])}{reel(t,"09-apple-watch-ultra-pairing",t["reel_alt"]["pairu"])}</div></div></section>
 <section id="demo" style="background:var(--sunk)"><div class="wrap"><h2>{e(t["feat_h"])}</h2><div class="cols3" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">{feats}</div></div></section>
-<section class="trust"><div class="wrap"><h2>{e(t["trust_h"])}</h2><ul>{trust}</ul></div></section>
+<section class="trust"><div class="wrap trust-grid"><div><h2>{e(t["trust_h"])}</h2><ul>{trust}</ul></div>{reel(t,"01-free-watch-app",t["reel_alt"]["free"])}</div></section>
 <section class="beta"><div class="wrap"><h2>{e(t["beta_h"])}</h2><ul>{beta}</ul><a class="btn" href="#apply" data-track="cta-beta">{e(t["cta"])}</a></div></section>
 <section><div class="wrap"><h2>{e(t["price_h"])}</h2><div class="plans">{plans}</div><p class="muted" style="margin-top:16px">{e(t["price_note"])}</p></div></section>
-<section style="padding-top:0"><div class="wrap"><h2>{e(t["watches_h"])}</h2><div class="watches">{watches}</div><h2>{e(t["faq_h"])}</h2>{faq}</div></section>
+<section style="padding-top:0"><div class="wrap"><h2>{e(t["watches_h"])}</h2><div class="watches">{watches}</div><div class="poke"><div><h2>{e(t["poke_h"])}</h2><p class="muted">{e(t["poke_p"])}</p></div><div class="reels2">{reel(t,"04-poke-garmin",t["reel_alt"]["poke_g"])}{reel(t,"08-poke-apple-watch-ultra",t["reel_alt"]["poke_a"])}</div></div><h2>{e(t["faq_h"])}</h2>{faq}</div></section>
 <section id="apply" class="apply"><div class="wrap"><h2>{e(t["apply_h"])}</h2><p>{e(t["apply_p"])}</p>
 <form id="beta-form" data-endpoint="{e(FORM_ENDPOINT)}">
 <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -144,6 +154,7 @@ def page(t):
 <form id="event-form" style="grid-template-columns:1fr auto;max-width:560px" data-endpoint="{e(FORM_ENDPOINT)}"><input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true"><input type="email" name="email" required placeholder="{e(t["ev_ph"])}" aria-label="{e(t["ev_ph"])}" autocomplete="email"><button class="btn" type="submit">{e(t["ev_btn"])}</button></form></div></section>
 </main>
 <footer><div class="wrap"><div><strong>Coach Link</strong><br>{e(t["rights"])}</div><div><a href="{INSTAGRAM}">Instagram</a><a href="mailto:{EMAIL}">{EMAIL}</a><a href="privacy.html">{e(t["privacy"])}</a></div></div></footer>
+<dialog id="demo-dialog" aria-label="{e(t["demo"])}"><button type="button" id="demo-close" aria-label="{e(t["close"])}">×</button><video controls playsinline preload="none" poster="{t["prefix"]}assets/media/demo-poster.jpg"><source src="{t["prefix"]}assets/media/demo.mp4" type="video/mp4"></video></dialog>
 <script src="{t["prefix"]}assets/app.js" data-lang="{t["lang"]}"></script></body></html>'''
 
 def privacy(t):

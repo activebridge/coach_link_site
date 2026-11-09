@@ -29,3 +29,34 @@
     (navigator.clipboard ? navigator.clipboard.writeText(link) : Promise.resolve()).then(function () { copy.textContent = copy.dataset.done; });
   });
 })();
+// Reels: play only while visible (saves data), click toggles sound, respect reduced motion.
+(function () {
+  var vids = [].slice.call(document.querySelectorAll(".reel video"));
+  var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  vids.forEach(function (v) {
+    v.addEventListener("click", function () {
+      v.muted = !v.muted;
+      if (!v.muted) vids.forEach(function (o) { if (o !== v) o.muted = true; });
+      if (v.paused) v.play().catch(function () {});
+    });
+  });
+  if (calm) { vids.forEach(function (v) { v.controls = true; }); return; }
+  if (!("IntersectionObserver" in window)) return;
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (en) {
+      var v = en.target;
+      if (en.isIntersecting) v.play().catch(function () {}); else { v.pause(); v.muted = true; }
+    });
+  }, { threshold: 0.5 });
+  vids.forEach(function (v) { io.observe(v); });
+})();
+// Demo dialog
+(function () {
+  var d = document.getElementById("demo-dialog"), o = document.getElementById("demo-open");
+  if (!d || !o || !d.showModal) return;
+  var v = d.querySelector("video");
+  o.addEventListener("click", function () { d.showModal(); v.play().catch(function () {}); });
+  document.getElementById("demo-close").addEventListener("click", function () { d.close(); });
+  d.addEventListener("click", function (e) { if (e.target === d) d.close(); });
+  d.addEventListener("close", function () { v.pause(); });
+})();
