@@ -1,19 +1,19 @@
 # Coach Link — landing site
 
-Jekyll site (EN + UA) for Coach Link, deployed to GitHub Pages at `https://activebridge.org/coach_link_site/`. Structure follows the "Coach Link — структура лендінгу" doc; design tokens and fonts come from the main `coach_link` app.
+Jekyll site (EN + UA) for Coach Link, deployed to GitHub Pages at `https://coachlink.ab.team/`. Structure follows the "Coach Link — структура лендінгу" doc; design tokens and fonts come from the main `coach_link` app.
 
 ## Run
 
 ```bash
 bundle install              # once (github-pages gem = the engine Pages uses)
-bundle exec jekyll serve    # http://localhost:4000/coach_link_site/   (UA: /uk/)
+bundle exec jekyll serve    # http://localhost:4000/   (UA: /uk/)
 ```
 
 Without Bundler: `JEKYLL_NO_BUNDLER_REQUIRE=1 jekyll serve`.
 
 ## Where things are
 
-- `_config.yml` — `baseurl`, email, Instagram, `form_endpoint` (empty = demo mode, nothing is sent), `event_date`. Set `baseurl: ""` when serving from a domain root.
+- `_config.yml` — `url`, `baseurl`, email, Instagram, `form_endpoint` (empty = demo mode, nothing is sent), `event_date`. The custom domain is configured with `url: "https://coachlink.ab.team"` and an empty `baseurl`.
 - `_data/en.yml`, `_data/uk.yml` — all copy. Edit text here, keep both files in sync.
 - `_layouts/default.html`, `_includes/` — page shell and sections (`sections/*`, feature card art in `art/*`, live card / watch mockups).
 - `index.html`, `uk/index.html`, `privacy.html`, `uk/privacy.html` — thin pages that pick the language via `lang:` front matter.

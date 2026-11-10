@@ -3,7 +3,8 @@
 <html lang="{{ t.lang }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 {%- if page.home -%}{%- assign ptitle = t.title -%}{%- else -%}{%- assign ptitle = t.priv_h | append: " — Coach Link" -%}{%- endif %}
 <title>{{ ptitle | escape }}</title><meta name="description" content="{{ t.desc | escape }}"><meta name="theme-color" content="#0e151b">
-<meta property="og:title" content="{{ ptitle | escape }}"><meta property="og:description" content="{{ t.desc | escape }}"><meta property="og:type" content="website">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta property="og:title" content="{{ ptitle | escape }}"><meta property="og:description" content="{{ t.desc | escape }}"><meta property="og:type" content="website"><meta property="og:url" content="{{ page.url | absolute_url }}">
 <link rel="icon" href="{{ '/assets/logo.svg' | relative_url }}" type="image/svg+xml">
 <link rel="preload" href="{{ '/assets/fonts/Onest-Variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ '/assets/fonts/Unbounded-Variable.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>

@@ -1,6 +1,6 @@
 title: Coach Link
-url: "https://activebridge.org"
-baseurl: "/coach_link_site"   # set to "" when served from a domain root
+url: "https://coachlink.ab.team"
+baseurl: ""
 markdown: kramdown
 
 # Site-wide values used by templates
