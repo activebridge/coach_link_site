@@ -294,3 +294,13 @@ html:not(.anim) .s-prog{display:none}
 .legal p,.legal li{color:var(--muted)}.legal ul{margin:0 0 1em;padding-left:1.3em;display:grid;gap:8px}.legal a{color:var(--ink);text-underline-offset:3px}.legal a:hover{color:var(--signal)}
 .legal h2{scroll-margin-top:calc(var(--hdr) + 16px)}.legal-nav{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;margin-top:48px;padding-top:24px;border-top:1px solid var(--soft)}
 .consent a{color:var(--ink);text-underline-offset:3px}.consent a:hover{color:var(--signal)}
+
+/* pricing: three plans */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.plans .price-card{max-width:none;display:flex;flex-direction:column;padding:clamp(24px,3vw,36px);border-radius:28px;box-shadow:0 0 0 1px var(--glass-line) inset}
+.plans .price-card .tag.solid{align-self:flex-start}.plans .price-card ul{flex:1}
+.plans .price-card.featured{box-shadow:0 0 0 1.5px color-mix(in srgb,var(--signal) 70%,transparent) inset,0 40px 100px -40px var(--glow)}
+.plans .price-card:not(.featured) .btn{background:var(--glass);color:var(--ink);box-shadow:0 0 0 1px var(--glass-line) inset}
+.plans .price-card:not(.featured) .btn:hover{box-shadow:0 0 0 1px color-mix(in srgb,var(--ink) 35%,transparent) inset}
+.pricing .pc-note{margin-top:28px;max-width:44em}
+@media(max-width:900px){.plans{grid-template-columns:1fr}.plans .price-card .tag[aria-hidden]{display:none}}

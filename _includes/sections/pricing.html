@@ -1,5 +1,6 @@
 <section class="pricing" id="pricing"><div class="wrap"><h2 data-reveal>{{ t.price_h | escape }}</h2>
-<div class="price-card" data-reveal data-spot><span class="tag solid">{{ t.plan_who | escape }}</span><h3>{{ t.plan_name | escape }}</h3>
-<div class="price"><b>{{ t.plan_price | escape }}</b><span>{{ t.plan_per | escape }}</span></div>
-<ul>{% for x in t.plan_list %}<li>{{ x | escape }}</li>{% endfor %}</ul><a class="btn lg" href="#apply" data-track="cta-price" data-magnetic>{{ t.cta | escape }}</a>
-<p class="pc-note">{{ t.price_note | escape }}</p><p class="pc-more">{{ t.plan_more | escape }}</p></div></div></section>
+<div class="plans">{% for p in t.plans %}<div class="price-card{% if p.featured %} featured{% endif %}" data-reveal data-spot>
+{% if p.featured %}<span class="tag solid">{{ t.popular | escape }}</span>{% else %}<span class="tag solid" aria-hidden="true" style="visibility:hidden">&nbsp;</span>{% endif %}<h3>{{ p.name | escape }}</h3>
+<div class="price"><b>{{ p.price | escape }}</b><span>{{ p.per | escape }}</span></div>
+<ul>{% for x in p.features %}<li>{{ x | escape }}</li>{% endfor %}</ul><a class="btn lg" href="#apply" data-track="cta-price-{{ p.name | downcase | replace: ' ', '-' }}" data-magnetic>{{ t.cta | escape }}</a></div>{% endfor %}</div>
+<p class="pc-note" data-reveal>{{ t.price_note | escape }}</p></div></section>

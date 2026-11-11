@@ -69,10 +69,10 @@ beta:
 - Your own promo code — earn a share of every subscription it brings
 - 'Direct line to the founder: your feedback shapes the product'
 - Only 100 spots
-price_h: Simple pricing, from $5/month
+price_h: Start free. Upgrade as you grow.
 popular: Most popular
 per: "/ month"
-price_note: Free for clients. Beta coaches get the first year of PRO free.
+price_note: Prices are per coach account. Free for clients. Beta coaches get the first year of PRO free.
 watches_h: Works with the watch your client already wears
 devices:
 - name: Garmin
@@ -93,7 +93,7 @@ faq:
 - q: Does it drain the battery?
   a: Coach Link only sends data during a session you have started together, so a normal workout is not affected noticeably. We will publish real numbers from the beta.
 - q: How many clients can I track at once?
-  a: Up to 5 on PRO, unlimited on PRO MAX.
+  a: 1 on Free, up to 5 on PRO, unlimited on PRO MAX.
 - q: Is client data private?
   a: Clients choose what to share and can stop anytime. See our privacy policy.
 - q: When does the beta start?
@@ -167,15 +167,6 @@ story:
 steps_h: Three steps. About a minute.
 bento_h: Everything you need around the session
 bento_p: Before, during and after — in one calm dashboard.
-plan_name: PRO
-plan_price: "$5"
-plan_per: "/ month"
-plan_who: per coach account
-plan_list:
-- Up to 5 clients at the same time
-- All features
-- Free for every client
-plan_more: Need unlimited clients? PRO MAX is $15 / month.
 final_h: See how your client feels — live.
 final_p: Apply for the beta. We review applications by hand and reply within 7 days.
 client_zone: Zone
@@ -262,7 +253,7 @@ legal:
       - 'Questions about your data: [email].'
   terms:
     title: Terms of service
-    desc: "The rules for using the Coach Link website, beta programme and app: accounts, client consent, pricing and liability."
+    desc: 'The rules for using the Coach Link website, beta programme and app: accounts, client consent, pricing and liability.'
     updated: November 11, 2026
     intro: These terms apply to the Coach Link website, the beta programme and the Coach Link apps (together, the “Service”). By applying for the beta, creating an account or using the Service you agree to them and to our Privacy policy. If you do not agree, please do not use the Service.
     sections:
@@ -286,7 +277,7 @@ legal:
       - Coach Link works with watches and platforms made by other companies, such as Garmin, Apple, Amazfit and Google. We are not affiliated with them, and their names are trademarks of their owners. Their availability, terms and the accuracy of their data are outside our control.
     - h: Pricing
       p:
-      - The app is free for clients. Coach plans are PRO at $5 per month (up to 5 clients at the same time) and PRO MAX at $15 per month (unlimited clients). The first year of PRO is free only for beta coaches; everyone else pays the prices above.
+      - The app is free for clients. Coach plans are Free (1 client at a time, live view only, no workout history), PRO at $5 per month (up to 5 clients at the same time) and PRO MAX at $15 per month (unlimited clients). The first year of PRO is free only for beta coaches; everyone else pays the prices above.
       - We will tell you before we charge anything or change a price, and billing details will be shown before you pay.
     - h: Acceptable use
       p:
@@ -319,4 +310,28 @@ legal:
       - 'Questions about these terms: [email].'
 terms: Terms of service
 terms_path: "/terms.html"
-updated_label: "Last updated:"
+updated_label: 'Last updated:'
+plans:
+- name: Free
+  price: "$0"
+  per: "/ month"
+  features:
+  - 1 client at a time
+  - Live view only
+  - No workout history
+  featured: false
+- name: PRO
+  price: "$5"
+  per: "/ month"
+  features:
+  - Up to 5 clients at the same time
+  - All features
+  featured: true
+- name: PRO MAX
+  price: "$15"
+  per: "/ month"
+  features:
+  - Unlimited clients at the same time
+  - All features
+  - Best for group classes and busy coaches
+  featured: false

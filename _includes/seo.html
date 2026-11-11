@@ -37,7 +37,7 @@
   "@graph": [
     {"@type": "Organization", "@id": "{{ '/#organization' | absolute_url }}", "name": "Coach Link", "url": "{{ '/' | absolute_url }}", "logo": "{{ '/assets/icon-512.png' | absolute_url }}", "email": "{{ site.email }}", "sameAs": [{{ site.instagram | jsonify }}]},
     {"@type": "WebSite", "@id": "{{ '/#website' | absolute_url }}", "url": "{{ '/' | absolute_url }}", "name": "Coach Link", "inLanguage": {{ t.hreflang | jsonify }}, "publisher": {"@id": "{{ '/#organization' | absolute_url }}"}},
-    {"@type": "SoftwareApplication", "name": "Coach Link", "applicationCategory": "LifestyleApplication", "description": {{ t.desc | jsonify }}, "url": "{{ page.url | absolute_url }}", "inLanguage": {{ t.hreflang | jsonify }}, "publisher": {"@id": "{{ '/#organization' | absolute_url }}"}, "offers": {"@type": "Offer", "price": "5", "priceCurrency": "USD", "description": {{ t.plan_who | jsonify }}}},
+    {"@type": "SoftwareApplication", "name": "Coach Link", "applicationCategory": "LifestyleApplication", "description": {{ t.desc | jsonify }}, "url": "{{ page.url | absolute_url }}", "inLanguage": {{ t.hreflang | jsonify }}, "publisher": {"@id": "{{ '/#organization' | absolute_url }}"}, "offers": [{% for p in t.plans %}{"@type": "Offer", "name": {{ p.name | jsonify }}, "price": "{{ p.price | remove: "$" }}", "priceCurrency": "USD"}{% unless forloop.last %}, {% endunless %}{% endfor %}]},
     {"@type": "FAQPage", "mainEntity": [{% for x in t.faq %}{"@type": "Question", "name": {{ x.q | jsonify }}, "acceptedAnswer": {"@type": "Answer", "text": {{ x.a | jsonify }}}}{% unless forloop.last %}, {% endunless %}{% endfor %}]}
   ]
 }
