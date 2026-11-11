@@ -5,7 +5,7 @@ markdown: kramdown
 
 # Site-wide values used by templates
 email: coachlink@ab.team
-instagram: https://instagram.com/coachlink   # TODO real handle
+instagram: https://www.instagram.com/coach.link.app/
 google_site_verification: "Ad6n77Zc4MMFeNlqsa9wzD9Ql4vH1427p2hyJSeVXDI"   # token from Google Search Console (HTML tag method); empty = no tag
 form_endpoint: "https://api.coachlink.ab.team/api/v1/leads"                   # form backend URL; empty = demo mode, nothing is sent
 

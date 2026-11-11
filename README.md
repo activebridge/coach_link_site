@@ -27,4 +27,4 @@ Smooth scroll uses Lenis, scroll-driven animation uses GSAP + ScrollTrigger. Eve
 
 ## TODO before launch
 
-Real `instagram`, `email`; form backend; privacy policy review; analytics; hero video and screenshots (local files live in `assets/media/`, git-ignored for now).
+Real `email`; form backend; privacy policy review; analytics; hero video and screenshots (local files live in `assets/media/`, git-ignored for now).
