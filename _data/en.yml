@@ -1,8 +1,8 @@
 ---
 lang: en
 other_label: UA
-title: Coach Link — see how your client feels, live
-desc: Coach Link turns your client's Garmin, Apple Watch or Amazfit into a live coaching dashboard on your phone. Free for clients. The beta starts December 1 — apply now.
+title: Coach Link — live heart rate dashboard for personal trainers
+desc: See your client's heart rate and zones live on your phone, from the Garmin, Apple Watch or Amazfit they already wear. Free for clients. Beta starts Dec 1.
 nav_cta: Apply for the beta
 h1: See how your client feels — live, from the watch they already wear.
 sub: Coach Link turns your client's Garmin, Apple Watch or Amazfit into a live coaching dashboard on your phone. Free for clients.
@@ -213,3 +213,8 @@ art:
   call: Video call
   set: Set 3 · 8 reps
   alert: Push harder
+og_image: /assets/og.png
+og_locale: en_US
+og_alt: Coach Link live heart rate cards for two clients
+locale_alt: uk_UA
+hreflang: en

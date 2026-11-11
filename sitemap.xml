@@ -1,0 +1,18 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- assign pairs = "/|/uk/,/privacy.html|/uk/privacy.html" | split: "," -%}
+{%- for pair in pairs -%}
+  {%- assign p = pair | split: "|" -%}
+  {%- for loc in p %}
+  <url>
+    <loc>{{ loc | absolute_url }}</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ p[0] | absolute_url }}"/>
+    <xhtml:link rel="alternate" hreflang="uk" href="{{ p[1] | absolute_url }}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ p[0] | absolute_url }}"/>
+  </url>
+  {%- endfor -%}
+{%- endfor %}
+</urlset>

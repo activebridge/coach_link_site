@@ -1,0 +1,44 @@
+{%- assign t = site.data[page.lang] -%}
+{%- if page.home -%}
+  {%- assign ptitle = t.title -%}{%- assign path_en = '/' -%}{%- assign path_uk = '/uk/' -%}
+{%- else -%}
+  {%- assign ptitle = t.priv_h | append: " — Coach Link" -%}{%- assign path_en = '/privacy.html' -%}{%- assign path_uk = '/uk/privacy.html' -%}
+{%- endif -%}
+<title>{{ ptitle | escape }}</title>
+<meta name="description" content="{{ t.desc | escape }}">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0e151b">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ path_en | absolute_url }}">
+<link rel="alternate" hreflang="uk" href="{{ path_uk | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ path_en | absolute_url }}">
+<meta property="og:site_name" content="Coach Link">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ ptitle | escape }}">
+<meta property="og:description" content="{{ t.desc | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:locale" content="{{ t.og_locale }}">
+<meta property="og:locale:alternate" content="{{ t.locale_alt }}">
+<meta property="og:image" content="{{ t.og_image | absolute_url }}">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ t.og_alt | escape }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ ptitle | escape }}">
+<meta name="twitter:description" content="{{ t.desc | escape }}">
+<meta name="twitter:image" content="{{ t.og_image | absolute_url }}">
+{%- if site.google_site_verification and site.google_site_verification != "" %}
+<meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{%- endif %}
+{%- if page.home %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type": "Organization", "@id": "{{ '/#organization' | absolute_url }}", "name": "Coach Link", "url": "{{ '/' | absolute_url }}", "logo": "{{ '/assets/icon-512.png' | absolute_url }}", "email": "{{ site.email }}", "sameAs": [{{ site.instagram | jsonify }}]},
+    {"@type": "WebSite", "@id": "{{ '/#website' | absolute_url }}", "url": "{{ '/' | absolute_url }}", "name": "Coach Link", "inLanguage": {{ t.hreflang | jsonify }}, "publisher": {"@id": "{{ '/#organization' | absolute_url }}"}},
+    {"@type": "SoftwareApplication", "name": "Coach Link", "applicationCategory": "LifestyleApplication", "description": {{ t.desc | jsonify }}, "url": "{{ page.url | absolute_url }}", "inLanguage": {{ t.hreflang | jsonify }}, "publisher": {"@id": "{{ '/#organization' | absolute_url }}"}, "offers": {"@type": "Offer", "price": "5", "priceCurrency": "USD", "description": {{ t.plan_who | jsonify }}}},
+    {"@type": "FAQPage", "mainEntity": [{% for x in t.faq %}{"@type": "Question", "name": {{ x.q | jsonify }}, "acceptedAnswer": {"@type": "Answer", "text": {{ x.a | jsonify }}}}{% unless forloop.last %}, {% endunless %}{% endfor %}]}
+  ]
+}
+</script>
+{%- endif %}
