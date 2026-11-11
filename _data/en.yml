@@ -3,7 +3,6 @@ lang: en
 other_label: UA
 title: Coach Link — see how your client feels, live
 desc: Coach Link turns your client's Garmin, Apple Watch or Amazfit into a live coaching dashboard on your phone. Free for clients. The beta starts December 1 — apply now.
-nav_event: Launch event
 nav_cta: Apply for the beta
 h1: See how your client feels — live, from the watch they already wear.
 sub: Coach Link turns your client's Garmin, Apple Watch or Amazfit into a live coaching dashboard on your phone. Free for clients.
@@ -125,23 +124,17 @@ watch_opts:
 - Don't know
 thanks_h: You're on the list.
 thanks_p: We'll review applications and reply within 7 days.
-cal: Add the launch event to your calendar
 ref: Invite another coach — applications with referrals are reviewed first.
 copy: Copy your invite link
 copied: Copied!
-ev_h: Join the launch event
-ev_p: Not in the beta? Come to the online launch.
-ev_date: 'Date: '
-ev_btn: Join the launch event
-ev_ph: Your email
 privacy: Privacy policy
 rights: "© Coach Link"
 priv_h: Privacy policy
 priv:
 - h: What we collect
-  p: 'The details you enter in the beta application or launch-event form: name, email, social handle, location, coaching type, number of clients and watch types. We also record which channel you came from (UTM tags) and a referral code if you used one.'
+  p: 'The details you enter in the beta application form: name, email, social handle, location, coaching type, number of clients and watch types. We also record which channel you came from (UTM tags) and a referral code if you used one.'
 - h: Why
-  p: To review beta applications, contact you about the beta and the launch event, and decide which watches to support first.
+  p: To review beta applications, contact you about the beta, and decide which watches to support first.
 - h: Who sees it
   p: Only the Coach Link team and the services we use to store the data and send email. We do not sell your data.
 - h: Your rights

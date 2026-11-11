@@ -14,6 +14,4 @@
 <label class="consent"><input type="checkbox" name="consent" required><span class="box"></span><span>{{ f.consent | escape }}</span></label>
 <button class="btn lg" type="submit" data-track="submit" data-magnetic>{{ f.send | escape }}</button></form>
 <div class="ok" id="thanks" role="status"><h3>{{ t.thanks_h | escape }}</h3><p>{{ t.thanks_p | escape }}</p><p>{{ t.ref | escape }}</p><button class="btn ghost" id="copy" type="button" data-done="{{ t.copied | escape }}">{{ t.copy | escape }}</button></div></div>
-<div class="event" id="event" data-reveal><div><h3>{{ t.ev_h | escape }}</h3><p>{{ t.ev_p | escape }} <strong>{{ t.ev_date | escape }}{{ site.event_date }}</strong></p></div>
-<form id="event-form" data-endpoint="{{ site.form_endpoint | escape }}"><input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true"><input type="email" name="email" required placeholder="{{ t.ev_ph | escape }}" aria-label="{{ t.ev_ph | escape }}" autocomplete="email"><button class="btn" type="submit">{{ t.ev_btn | escape }}</button></form></div>
 </div></section>

@@ -13,7 +13,7 @@ Without Bundler: `JEKYLL_NO_BUNDLER_REQUIRE=1 jekyll serve`.
 
 ## Where things are
 
-- `_config.yml` — `url`, `baseurl`, email, Instagram, `form_endpoint` (empty = demo mode, nothing is sent), `event_date`. The custom domain is configured with `url: "https://coachlink.ab.team"` and an empty `baseurl`.
+- `_config.yml` — `url`, `baseurl`, email, Instagram, `form_endpoint` (empty = demo mode, nothing is sent). The custom domain is configured with `url: "https://coachlink.ab.team"` and an empty `baseurl`.
 - `_data/en.yml`, `_data/uk.yml` — all copy. Edit text here, keep both files in sync.
 - `_layouts/default.html`, `_includes/` — page shell and sections (`sections/*`, feature card art in `art/*`, live card / watch mockups).
 - `index.html`, `uk/index.html`, `privacy.html`, `uk/privacy.html` — thin pages that pick the language via `lang:` front matter.
@@ -27,4 +27,4 @@ Smooth scroll uses Lenis, scroll-driven animation uses GSAP + ScrollTrigger. Eve
 
 ## TODO before launch
 
-Real `event_date`, `instagram`, `email`; form backend; privacy policy review; analytics; hero video and screenshots (local files live in `assets/media/`, git-ignored for now).
+Real `instagram`, `email`; form backend; privacy policy review; analytics; hero video and screenshots (local files live in `assets/media/`, git-ignored for now).

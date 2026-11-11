@@ -27,8 +27,6 @@
     if (!beta.checkValidity()) { beta.reportValidity(); return; }
     send(beta, function () { beta.classList.add("sent"); $("#thanks").scrollIntoView({ behavior: calm ? "auto" : "smooth", block: "center" }); });
   });
-  var evf = $("#event-form");
-  if (evf) evf.addEventListener("submit", function (ev) { ev.preventDefault(); send(evf, function () { evf.innerHTML = "<strong>✓</strong>"; }); });
   var copy = $("#copy");
   if (copy) copy.addEventListener("click", function () {
     var link = location.origin + location.pathname + "?ref=" + encodeURIComponent(($("#f-email").value || "").split("@")[0]);

@@ -257,10 +257,6 @@ form .btn{justify-self:start;margin-top:6px}
 .hp{position:absolute;left:-9999px}
 .ok{display:none;text-align:center;padding:24px 0}.ok h3{font-size:1.6rem;margin-bottom:12px}.ok p{color:var(--muted);margin-bottom:16px}
 form.sent{display:none}form.sent+.ok{display:block}
-.event{position:relative;max-width:720px;margin:48px auto 0;display:flex;flex-wrap:wrap;gap:20px 32px;align-items:center;justify-content:space-between}
-.event h3{margin-bottom:6px}.event p{color:var(--muted);font-size:.95rem}.event strong{color:var(--ink)}
-#event-form{display:flex;gap:10px;flex:1 1 320px;max-width:440px}#event-form input{min-height:48px;border-radius:999px;padding:0 20px}#event-form .btn{flex:none;margin:0}
-@media(max-width:480px){#event-form{flex-direction:column;max-width:none}}
 
 footer{background:var(--bar);padding:40px 0 56px;font-size:.92rem;color:var(--muted);box-shadow:0 -1px 0 var(--glass-line)}
 .foot{display:flex;flex-wrap:wrap;gap:20px 40px;justify-content:space-between}.foot strong{color:var(--ink)}.foot-l{display:flex;flex-wrap:wrap;gap:8px 24px}.foot a{text-decoration:none}.foot a:hover{color:var(--ink)}
