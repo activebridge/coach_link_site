@@ -6,7 +6,7 @@ markdown: kramdown
 # Site-wide values used by templates
 email: coachlink@ab.team
 instagram: https://instagram.com/coachlink   # TODO real handle
-form_endpoint: ""                   # form backend URL; empty = demo mode, nothing is sent
+form_endpoint: "https://api.coachlink.ab.team/api/v1/leads"                   # form backend URL; empty = demo mode, nothing is sent
 event_date: TBA                     # launch-event date; the beta itself starts Dec 1
 
 exclude:
