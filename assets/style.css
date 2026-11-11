@@ -288,3 +288,9 @@ html:not(.anim) .s-prog{display:none}
 .brand,.btn.sm{white-space:nowrap}
 @media(max-width:480px){.bar-in{gap:8px}.brand{font-size:.9rem;gap:8px}.bar-r{gap:2px}.btn.sm{padding:0 14px;font-size:.85rem}.lang{padding:8px}}
 @media(max-width:520px){.cta .btn{flex:1 1 100%}}
+
+/* legal pages */
+.legal-meta{color:var(--muted);font-size:.9rem;margin:-12px 0 20px}.legal-intro{font-size:1.1rem;margin-bottom:8px}
+.legal p,.legal li{color:var(--muted)}.legal ul{margin:0 0 1em;padding-left:1.3em;display:grid;gap:8px}.legal a{color:var(--ink);text-underline-offset:3px}.legal a:hover{color:var(--signal)}
+.legal h2{scroll-margin-top:calc(var(--hdr) + 16px)}.legal-nav{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;margin-top:48px;padding-top:24px;border-top:1px solid var(--soft)}
+.consent a{color:var(--ink);text-underline-offset:3px}.consent a:hover{color:var(--signal)}

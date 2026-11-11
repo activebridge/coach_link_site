@@ -11,7 +11,7 @@
 <fieldset class="field"><legend>{{ f.how | escape }}</legend><div class="opts">{% for o in t.how_opts %}<label class="opt"><input type="checkbox" name="how" value="{{ o | escape }}"><span>{{ o | escape }}</span></label>{% endfor %}</div></fieldset>
 <div class="field"><label for="f-clients">{{ f.clients | escape }}</label><div class="select"><select id="f-clients" name="clients" required><option value="">—</option><option>1–5</option><option>6–15</option><option>16–30</option><option>30+</option></select></div></div>
 <fieldset class="field"><legend>{{ f.watch | escape }}</legend><div class="opts">{% for o in t.watch_opts %}<label class="opt"><input type="checkbox" name="watches" value="{{ o | escape }}"><span>{{ o | escape }}</span></label>{% endfor %}</div></fieldset>
-<label class="consent"><input type="checkbox" name="consent" required><span class="box"></span><span>{{ f.consent | escape }}</span></label>
+<label class="consent"><input type="checkbox" name="consent" required><span class="box"></span><span>{{ f.consent_a | escape }} <a href="{{ t.privacy_path | relative_url }}" target="_blank" rel="noopener">{{ f.consent_priv | escape }}</a> {{ f.consent_b | escape }} <a href="{{ t.terms_path | relative_url }}" target="_blank" rel="noopener">{{ f.consent_terms | escape }}</a>{{ f.consent_c }}</span></label>
 <button class="btn lg" type="submit" data-track="submit" data-magnetic>{{ f.send | escape }}</button></form>
 <div class="ok" id="thanks" role="status"><h3>{{ t.thanks_h | escape }}</h3><p>{{ t.thanks_p | escape }}</p><p>{{ t.ref | escape }}</p><button class="btn ghost" id="copy" type="button" data-done="{{ t.copied | escape }}">{{ t.copy | escape }}</button></div></div>
 </div></section>

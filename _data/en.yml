@@ -108,8 +108,12 @@ f:
   how: How do you coach?
   clients: Active clients
   watch: Your clients' watches
-  consent: I agree to the processing of my data as described in the privacy policy.
   send: Send application
+  consent_a: I agree to the processing of my data as described in the
+  consent_priv: Privacy policy
+  consent_b: and accept the
+  consent_terms: Terms of service
+  consent_c: "."
 how_opts:
 - 1:1 in gym
 - Group classes
@@ -129,18 +133,6 @@ copy: Copy your invite link
 copied: Copied!
 privacy: Privacy policy
 rights: "© Coach Link"
-priv_h: Privacy policy
-priv:
-- h: What we collect
-  p: 'The details you enter in the beta application form: name, email, social handle, location, coaching type, number of clients and watch types. We also record which channel you came from (UTM tags) and a referral code if you used one.'
-- h: Why
-  p: To review beta applications, contact you about the beta, and decide which watches to support first.
-- h: Who sees it
-  p: Only the Coach Link team and the services we use to store the data and send email. We do not sell your data.
-- h: Your rights
-  p: Write to [email] to see, correct or delete your data, or to withdraw consent at any time.
-- h: Health data
-  p: This site does not collect health data. The Coach Link app only shares what a client chooses to share with their coach.
 back: Back to the site
 nav:
 - id: story
@@ -213,8 +205,118 @@ art:
   call: Video call
   set: Set 3 · 8 reps
   alert: Push harder
-og_image: /assets/og.png
+og_image: "/assets/og.png"
 og_locale: en_US
 og_alt: Coach Link live heart rate cards for two clients
 locale_alt: uk_UA
 hreflang: en
+legal:
+  privacy:
+    title: Privacy policy
+    desc: How Coach Link collects, uses and protects the information you share on this website and in the app.
+    updated: November 11, 2026
+    intro: This policy explains what personal data Coach Link collects on this website and in the app, why we collect it and what choices you have. We keep it short and plain on purpose.
+    sections:
+    - h: Who we are
+      p:
+      - 'Coach Link (“we”, “us”) lets a personal trainer see a client’s live heart rate and related watch data on the trainer’s phone. We decide how the data described below is used. Contact: [email].'
+    - h: What we collect
+      p:
+      - 'Depending on how you use Coach Link, we collect:'
+      ul:
+      - 'Beta application: your name, email, Instagram or TikTok handle, country and city, how you coach, number of active clients and the watches your clients use.'
+      - 'Campaign data: the language of the page and, if the link you followed contains them, UTM tags and a referral code. They are kept in your browser’s session storage while the tab is open and are sent together with your application.'
+      - 'In the app (during and after the beta): a coach’s account details, the clients a coach pairs with, and the data a client’s watch shares during a session, such as heart rate, heart-rate zones, steps and, where the watch provides them, stress, breathing, Body Battery and similar readings, plus workout history and notes the coach adds.'
+    - h: Why we use it
+      p:
+      - We use personal data to review beta applications and contact you about the beta (your consent, and steps you ask us to take before using the service); to provide the service you or your coach ask for (performance of a contract); and to understand which channels and watches matter and keep the service secure (our legitimate interest in running and improving it). Where we rely on consent, you can withdraw it at any time.
+    - h: Clients and their data
+      p:
+      - Pairing with a coach is confirmed on the client’s own watch. A client chooses what to share and can stop sharing at any time. A coach may only pair with clients who have agreed.
+      - Coach Link is for training and wellness use. It is not a medical device and does not diagnose or monitor medical conditions.
+    - h: Who sees your data
+      p:
+      - 'Only the Coach Link team and the service providers that help us run the website and the app: website hosting and content delivery (GitHub Pages and Cloudflare), servers and databases for the app and the application form, and email delivery. They may process data only on our instructions.'
+      - We do not sell personal data and we do not use it for advertising.
+    - h: International transfers
+      p:
+      - Some of our providers are located outside your country, including outside the EU, the EEA and Ukraine. Where the law requires it, we rely on appropriate safeguards for such transfers.
+    - h: How long we keep it
+      p:
+      - We keep application data only as long as we need it to run the beta and to contact you, and then delete or anonymise it. Account and session data is kept while the account is active, and you can ask us to delete it sooner. We may keep minimal records where the law requires it.
+    - h: Cookies and browser storage
+      p:
+      - This website does not use advertising or analytics cookies. It keeps campaign tags in session storage, which is cleared when you close the tab. Our hosting and security provider may set technical cookies or process requests that are needed to deliver and protect the site.
+    - h: Your rights
+      p:
+      - Depending on where you live (for example under the GDPR), you can ask us to give you access to your data, correct it, delete it or hand it over in a portable format, restrict or object to some uses, and withdraw your consent. Write to [email] and we will reply as soon as we can.
+      - You also have the right to complain to your local data-protection authority.
+    - h: Children
+      p:
+      - The website and the application form are for adults. A coach must not pair with a minor without the consent of the minor’s parent or guardian.
+    - h: Changes
+      p:
+      - When something changes we update this page and the date above. If the change is significant, we will tell beta applicants by email.
+    - h: Contact
+      p:
+      - 'Questions about your data: [email].'
+  terms:
+    title: Terms of service
+    desc: "The rules for using the Coach Link website, beta programme and app: accounts, client consent, pricing and liability."
+    updated: November 11, 2026
+    intro: These terms apply to the Coach Link website, the beta programme and the Coach Link apps (together, the “Service”). By applying for the beta, creating an account or using the Service you agree to them and to our Privacy policy. If you do not agree, please do not use the Service.
+    sections:
+    - h: The beta programme
+      p:
+      - 'The beta is by invitation: we review applications by hand and applying does not guarantee a place. We aim to reply to every application within 7 days. Beta features may change, break or be removed.'
+      - Founding coaches receive the first year of PRO free. The conditions of the promo-code share will be agreed in writing before any payment is made. We may end a beta place if these terms are broken.
+    - h: Accounts and coaches
+      p:
+      - Coaches must be adults, give accurate information and keep their login secure. You are responsible for everything that happens under your account.
+    - h: Clients and consent
+      p:
+      - A coach must have a client’s clear agreement before pairing with their watch. Clients confirm pairing on their own watch, choose what to share and can stop at any time.
+      - A coach may use a client’s data only to coach that client and must not share it with anyone else without the client’s permission.
+    - h: Not medical advice
+      p:
+      - Coach Link shows effort, recovery and readiness information taken from consumer watches. It is not a medical device, it does not diagnose, treat or prevent any condition, and readings can be inaccurate or delayed.
+      - Coaches and clients remain responsible for their training decisions. Stop and seek medical help if someone feels unwell.
+    - h: Watches and third parties
+      p:
+      - Coach Link works with watches and platforms made by other companies, such as Garmin, Apple, Amazfit and Google. We are not affiliated with them, and their names are trademarks of their owners. Their availability, terms and the accuracy of their data are outside our control.
+    - h: Pricing
+      p:
+      - The app is free for clients. Coach plans are PRO at $5 per month (up to 5 clients at the same time) and PRO MAX at $15 per month (unlimited clients). Beta coaches get the first year of PRO free.
+      - We will tell you before we charge anything or change a price, and billing details will be shown before you pay.
+    - h: Acceptable use
+      p:
+      - 'Please do not:'
+      ul:
+      - use the Service for anything unlawful or to track someone who has not agreed to it;
+      - pair with a client’s watch without their consent;
+      - reverse-engineer, disrupt or overload the Service or try to access other people’s accounts;
+      - scrape the Service or use it to build a competing product.
+    - h: Availability
+      p:
+      - During the beta the Service is provided “as is”. We do not promise that it will be uninterrupted or free of errors.
+    - h: Liability
+      p:
+      - To the extent the law allows, we are not liable for indirect or consequential losses, lost data or injuries that result from training decisions made with the Service. Nothing in these terms limits liability that cannot be limited by law, including liability for fraud or for death or personal injury caused by negligence.
+    - h: Intellectual property
+      p:
+      - The Coach Link name, logo, website and software belong to us. You keep ownership of your data and give us only the permission we need to run the Service for you.
+    - h: Suspension and ending
+      p:
+      - You can stop using the Service and ask us to delete your account at any time. We may suspend or end access if these terms are broken or the law requires it, and we will explain why where we can.
+    - h: Changes
+      p:
+      - We may update these terms; the date above shows the latest version. If a change is significant, we will email you before it applies. If you keep using the Service after that, you accept the new terms.
+    - h: Governing law
+      p:
+      - These terms are governed by the laws of Ukraine, without limiting any mandatory consumer rights you have where you live.
+    - h: Contact
+      p:
+      - 'Questions about these terms: [email].'
+terms: Terms of service
+terms_path: "/terms.html"
+updated_label: "Last updated:"

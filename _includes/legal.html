@@ -1,0 +1,13 @@
+{%- assign t = site.data[page.lang] -%}
+{%- assign L = t.legal[page.legal] -%}
+{%- capture mail %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endcapture -%}
+<section class="legal-s"><div class="wrap legal">
+<h1>{{ L.title | escape }}</h1>
+<p class="legal-meta">{{ t.updated_label | escape }} {{ L.updated | escape }}</p>
+<p class="legal-intro">{{ L.intro | escape }}</p>
+{% for s in L.sections %}<h2>{{ forloop.index }}. {{ s.h | escape }}</h2>
+{% for para in s.p %}<p>{{ para | escape | replace: "[email]", mail }}</p>
+{% endfor %}{% if s.ul %}<ul>{% for li in s.ul %}<li>{{ li | escape }}</li>{% endfor %}</ul>
+{% endif %}{% endfor %}
+<p class="legal-nav">{% if page.legal == "privacy" %}<a href="{{ t.terms_path | relative_url }}">{{ t.terms | escape }} →</a>{% else %}<a href="{{ t.privacy_path | relative_url }}">{{ t.privacy | escape }} →</a>{% endif %}<a href="{{ t.home | relative_url }}">← {{ t.back | escape }}</a></p>
+</div></section>
