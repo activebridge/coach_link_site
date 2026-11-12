@@ -1,11 +1,11 @@
 ---
 lang: en
 other_label: UA
-title: Coach Link — live heart rate dashboard for personal trainers
+title: wrist.coach — live heart rate dashboard for personal trainers
 desc: See your client's heart rate and zones live on your phone, from the Garmin, Apple Watch or Amazfit they already wear. Free for clients. Beta starts Dec 1.
 nav_cta: Apply for the beta
 h1: See how your client feels — live, from the watch they already wear.
-sub: Coach Link turns your client's Garmin, Apple Watch or Amazfit into a live coaching dashboard on your phone. Free for clients.
+sub: wrist.coach turns your client's Garmin, Apple Watch or Amazfit into a live coaching dashboard on your phone. Free for clients.
 cta: Apply for the beta
 spots: Beta starts Dec 1 · 100 spots · 1 year free for beta coaches
 pains_h: Sound familiar?
@@ -15,7 +15,7 @@ pains:
 - Counting reps in your head while watching their form.
 how_h: How it works
 steps:
-- Your client installs the free Coach Link app on their watch.
+- Your client installs the free wrist.coach app on their watch.
 - You scan the QR code on their watch.
 - Their heart rate, zones and stats appear on your phone — live.
 how_note: No chest straps. No extra hardware. Works with many clients at once.
@@ -65,7 +65,7 @@ trust:
 - Works with the watch they already have.
 beta_h: Become a founding coach.
 beta:
-- 1 year of Coach Link PRO free
+- 1 year of wrist.coach PRO free
 - Your own promo code — earn a share of every subscription it brings
 - 'Direct line to the founder: your feedback shapes the product'
 - Only 100 spots
@@ -91,7 +91,7 @@ faq:
 - q: Does my client need to pay?
   a: No. The app is free for clients, always.
 - q: Does it drain the battery?
-  a: Coach Link only sends data during a session you have started together, so a normal workout is not affected noticeably. We will publish real numbers from the beta.
+  a: wrist.coach only sends data during a session you have started together, so a normal workout is not affected noticeably. We will publish real numbers from the beta.
 - q: How many clients can I track at once?
   a: 1 on Free, up to 5 on PRO, unlimited on PRO MAX.
 - q: Is client data private?
@@ -132,7 +132,7 @@ ref: Invite another coach — applications with referrals are reviewed first.
 copy: Copy your invite link
 copied: Copied!
 privacy: Privacy policy
-rights: "© Coach Link"
+rights: "© wrist.coach"
 back: Back to the site
 nav:
 - id: story
@@ -198,22 +198,22 @@ art:
   alert: Push harder
 og_image: "/assets/og.png"
 og_locale: en_US
-og_alt: Coach Link live heart rate cards for two clients
+og_alt: wrist.coach live heart rate cards for two clients
 locale_alt: uk_UA
 hreflang: en
 legal:
   privacy:
     title: Privacy policy
-    desc: How Coach Link collects, uses and protects the information you share on this website and in the app.
+    desc: How wrist.coach collects, uses and protects the information you share on this website and in the app.
     updated: November 11, 2026
-    intro: This policy explains what personal data Coach Link collects on this website and in the app, why we collect it and what choices you have. We keep it short and plain on purpose.
+    intro: This policy explains what personal data wrist.coach collects on this website and in the app, why we collect it and what choices you have. We keep it short and plain on purpose.
     sections:
     - h: Who we are
       p:
-      - 'Coach Link (“we”, “us”) lets a personal trainer see a client’s live heart rate and related watch data on the trainer’s phone. We decide how the data described below is used. Contact: [email].'
+      - 'wrist.coach (“we”, “us”) lets a personal trainer see a client’s live heart rate and related watch data on the trainer’s phone. We decide how the data described below is used. Contact: [email].'
     - h: What we collect
       p:
-      - 'Depending on how you use Coach Link, we collect:'
+      - 'Depending on how you use wrist.coach, we collect:'
       ul:
       - 'Beta application: your name, email, Instagram or TikTok handle, country and city, how you coach, number of active clients and the watches your clients use.'
       - 'Campaign data: the language of the page and, if the link you followed contains them, UTM tags and a referral code. They are kept in your browser’s session storage while the tab is open and are sent together with your application.'
@@ -224,10 +224,10 @@ legal:
     - h: Clients and their data
       p:
       - Pairing with a coach is confirmed on the client’s own watch. A client chooses what to share and can stop sharing at any time. A coach may only pair with clients who have agreed.
-      - Coach Link is for training and wellness use. It is not a medical device and does not diagnose or monitor medical conditions.
+      - wrist.coach is for training and wellness use. It is not a medical device and does not diagnose or monitor medical conditions.
     - h: Who sees your data
       p:
-      - 'Only the Coach Link team and the service providers that help us run the website and the app: website hosting and content delivery (GitHub Pages and Cloudflare), servers and databases for the app and the application form, and email delivery. They may process data only on our instructions.'
+      - 'Only the wrist.coach team and the service providers that help us run the website and the app: website hosting and content delivery (GitHub Pages and Cloudflare), servers and databases for the app and the application form, and email delivery. They may process data only on our instructions.'
       - We do not sell personal data and we do not use it for advertising.
     - h: International transfers
       p:
@@ -253,9 +253,9 @@ legal:
       - 'Questions about your data: [email].'
   terms:
     title: Terms of service
-    desc: 'The rules for using the Coach Link website, beta programme and app: accounts, client consent, pricing and liability.'
+    desc: 'The rules for using the wrist.coach website, beta programme and app: accounts, client consent, pricing and liability.'
     updated: November 11, 2026
-    intro: These terms apply to the Coach Link website, the beta programme and the Coach Link apps (together, the “Service”). By applying for the beta, creating an account or using the Service you agree to them and to our Privacy policy. If you do not agree, please do not use the Service.
+    intro: These terms apply to the wrist.coach website, the beta programme and the wrist.coach apps (together, the “Service”). By applying for the beta, creating an account or using the Service you agree to them and to our Privacy policy. If you do not agree, please do not use the Service.
     sections:
     - h: The beta programme
       p:
@@ -270,11 +270,11 @@ legal:
       - A coach may use a client’s data only to coach that client and must not share it with anyone else without the client’s permission.
     - h: Not medical advice
       p:
-      - Coach Link shows effort, recovery and readiness information taken from consumer watches. It is not a medical device, it does not diagnose, treat or prevent any condition, and readings can be inaccurate or delayed.
+      - wrist.coach shows effort, recovery and readiness information taken from consumer watches. It is not a medical device, it does not diagnose, treat or prevent any condition, and readings can be inaccurate or delayed.
       - Coaches and clients remain responsible for their training decisions. Stop and seek medical help if someone feels unwell.
     - h: Watches and third parties
       p:
-      - Coach Link works with watches and platforms made by other companies, such as Garmin, Apple, Amazfit and Google. We are not affiliated with them, and their names are trademarks of their owners. Their availability, terms and the accuracy of their data are outside our control.
+      - wrist.coach works with watches and platforms made by other companies, such as Garmin, Apple, Amazfit and Google. We are not affiliated with them, and their names are trademarks of their owners. Their availability, terms and the accuracy of their data are outside our control.
     - h: Pricing
       p:
       - The app is free for clients. Coach plans are Free (1 client at a time, live view only, no workout history), PRO at $5 per month (up to 5 clients at the same time) and PRO MAX at $15 per month (unlimited clients). The first year of PRO is free only for beta coaches; everyone else pays the prices above.
@@ -295,7 +295,7 @@ legal:
       - To the extent the law allows, we are not liable for indirect or consequential losses, lost data or injuries that result from training decisions made with the Service. Nothing in these terms limits liability that cannot be limited by law, including liability for fraud or for death or personal injury caused by negligence.
     - h: Intellectual property
       p:
-      - The Coach Link name, logo, website and software belong to us. You keep ownership of your data and give us only the permission we need to run the Service for you.
+      - The wrist.coach name, logo, website and software belong to us. You keep ownership of your data and give us only the permission we need to run the Service for you.
     - h: Suspension and ending
       p:
       - You can stop using the Service and ask us to delete your account at any time. We may suspend or end access if these terms are broken or the law requires it, and we will explain why where we can.

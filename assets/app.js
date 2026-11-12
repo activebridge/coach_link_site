@@ -1,4 +1,4 @@
-/* Coach Link landing: forms, live demo data, smooth scroll and scroll-driven motion.
+/* wrist.coach landing: forms, live demo data, smooth scroll and scroll-driven motion.
    Everything degrades: without JS or with prefers-reduced-motion the page is a plain static layout. */
 (function () {
   var $ = function (s, r) { return (r || document).querySelector(s); };

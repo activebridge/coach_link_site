@@ -2,7 +2,7 @@
 {%- if page.home -%}
   {%- assign ptitle = t.title -%}{%- assign pdesc = t.desc -%}{%- assign path_en = '/' -%}{%- assign path_uk = '/uk/' -%}
 {%- else -%}
-  {%- assign L = t.legal[page.legal] -%}{%- assign ptitle = L.title | append: " — Coach Link" -%}{%- assign pdesc = L.desc -%}
+  {%- assign L = t.legal[page.legal] -%}{%- assign ptitle = L.title | append: " — wrist.coach" -%}{%- assign pdesc = L.desc -%}
   {%- if page.legal == 'terms' -%}{%- assign path_en = '/terms.html' -%}{%- assign path_uk = '/uk/terms.html' -%}{%- else -%}{%- assign path_en = '/privacy.html' -%}{%- assign path_uk = '/uk/privacy.html' -%}{%- endif -%}
 {%- endif -%}
 <title>{{ ptitle | escape }}</title>
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="en" href="{{ path_en | absolute_url }}">
 <link rel="alternate" hreflang="uk" href="{{ path_uk | absolute_url }}">
 <link rel="alternate" hreflang="x-default" href="{{ path_en | absolute_url }}">
-<meta property="og:site_name" content="Coach Link">
+<meta property="og:site_name" content="wrist.coach">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ ptitle | escape }}">
 <meta property="og:description" content="{{ pdesc | escape }}">
@@ -35,9 +35,9 @@
 {
   "@context": "https://schema.org",
   "@graph": [
-    {"@type": "Organization", "@id": "{{ '/#organization' | absolute_url }}", "name": "Coach Link", "url": "{{ '/' | absolute_url }}", "logo": "{{ '/assets/icon-512.png' | absolute_url }}", "email": "{{ site.email }}", "sameAs": [{{ site.instagram | jsonify }}]},
-    {"@type": "WebSite", "@id": "{{ '/#website' | absolute_url }}", "url": "{{ '/' | absolute_url }}", "name": "Coach Link", "inLanguage": {{ t.hreflang | jsonify }}, "publisher": {"@id": "{{ '/#organization' | absolute_url }}"}},
-    {"@type": "SoftwareApplication", "name": "Coach Link", "applicationCategory": "LifestyleApplication", "description": {{ t.desc | jsonify }}, "url": "{{ page.url | absolute_url }}", "inLanguage": {{ t.hreflang | jsonify }}, "publisher": {"@id": "{{ '/#organization' | absolute_url }}"}, "offers": [{% for p in t.plans %}{"@type": "Offer", "name": {{ p.name | jsonify }}, "price": "{{ p.price | remove: "$" }}", "priceCurrency": "USD"}{% unless forloop.last %}, {% endunless %}{% endfor %}]},
+    {"@type": "Organization", "@id": "{{ '/#organization' | absolute_url }}", "name": "wrist.coach", "url": "{{ '/' | absolute_url }}", "logo": "{{ '/assets/icon-512.png' | absolute_url }}", "email": "{{ site.email }}", "sameAs": [{{ site.instagram | jsonify }}]},
+    {"@type": "WebSite", "@id": "{{ '/#website' | absolute_url }}", "url": "{{ '/' | absolute_url }}", "name": "wrist.coach", "inLanguage": {{ t.hreflang | jsonify }}, "publisher": {"@id": "{{ '/#organization' | absolute_url }}"}},
+    {"@type": "SoftwareApplication", "name": "wrist.coach", "applicationCategory": "LifestyleApplication", "description": {{ t.desc | jsonify }}, "url": "{{ page.url | absolute_url }}", "inLanguage": {{ t.hreflang | jsonify }}, "publisher": {"@id": "{{ '/#organization' | absolute_url }}"}, "offers": [{% for p in t.plans %}{"@type": "Offer", "name": {{ p.name | jsonify }}, "price": "{{ p.price | remove: "$" }}", "priceCurrency": "USD"}{% unless forloop.last %}, {% endunless %}{% endfor %}]},
     {"@type": "FAQPage", "mainEntity": [{% for x in t.faq %}{"@type": "Question", "name": {{ x.q | jsonify }}, "acceptedAnswer": {"@type": "Answer", "text": {{ x.a | jsonify }}}}{% unless forloop.last %}, {% endunless %}{% endfor %}]}
   ]
 }

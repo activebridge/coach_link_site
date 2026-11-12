@@ -1,4 +1,4 @@
-/* Coach Link landing — dark ("Rubber") brand theme. Colours come from the app's design tokens; nothing new is invented, only tints and alphas of these. */
+/* wrist.coach landing — dark ("Rubber") brand theme. Colours come from the app's design tokens; nothing new is invented, only tints and alphas of these. */
 @font-face{font-family:Onest;src:url(fonts/Onest-Variable.woff2) format("woff2");font-weight:100 900;font-display:swap}
 @font-face{font-family:Unbounded;src:url(fonts/Unbounded-Variable.woff2) format("woff2");font-weight:200 900;font-display:swap}
 
@@ -304,3 +304,5 @@ html:not(.anim) .s-prog{display:none}
 .plans .price-card:not(.featured) .btn:hover{box-shadow:0 0 0 1px color-mix(in srgb,var(--ink) 35%,transparent) inset}
 .pricing .pc-note{margin-top:28px;max-width:44em}
 @media(max-width:900px){.plans{grid-template-columns:1fr}.plans .price-card .tag[aria-hidden]{display:none}}
+.brand i,.foot i.dot{font-style:normal;color:var(--accent,#ffd21f)}
+@media(max-width:480px){.brand{font-size:.78rem;gap:6px}.brand img{width:24px;height:24px}.btn.sm{padding:0 12px}}

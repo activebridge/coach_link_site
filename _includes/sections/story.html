@@ -2,7 +2,7 @@
 <div class="wrap"><h2 class="story-h">{{ t.story_h | escape }}</h2>
 <div class="story-stage"><div class="s-watch">{% include watch.html hr=146 cls="" %}<span class="s-tag">{{ t.story[0].title | escape }}</span></div>
 <svg class="s-path" aria-hidden="true"><path class="sp-base"/><path class="sp-glow"/><g class="sp-dots"><circle r="5"/><circle r="5"/><circle r="5"/><circle r="5"/><circle r="5"/></g></svg>
-<div class="s-phone"><div class="ph-top"><b>Coach Link</b><span class="lc-live"><i></i>{{ t.live_lbl }}</span></div>
+<div class="s-phone"><div class="ph-top"><b>wrist.coach</b><span class="lc-live"><i></i>{{ t.live_lbl }}</span></div>
 {% include live-card.html name="Anna" hr=162 phase="0.3" amp=16 cls="s-card" %}<div class="s-card-wrap">{% include live-card.html name="Marcus" hr=138 phase="1.9" amp=14 cls="s-card" %}<button class="s-poke" type="button" tabindex="-1">{{ t.art.poke | escape }}</button></div>{% include live-card.html name="Dana" hr=118 phase="3.4" amp=12 cls="s-card" %}</div></div>
 <ol class="caps">{% for s in t.story %}<li class="cap"><span class="cap-n">0{{ forloop.index }}</span><h3>{{ s.title | escape }}</h3><p>{{ s.text | escape }}</p></li>{% endfor %}</ol>
 <div class="s-prog" aria-hidden="true"><i></i></div></div></div></section>
